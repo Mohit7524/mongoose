@@ -49,3 +49,14 @@ const mohitVirtue=new mongoose.model("mongoose",mohitVirtueeSchema);
 // mohitVirtueeSchema : Collection Name
 
 
+// Create Document or Inset the db
+
+const reactmohitVirtue=new mohitVirtue({
+    firstName:'Sahzaad',
+    lastName:'Singh',
+    mobile_no:8366663726,
+    emailId:'sahzad@gmail.com'
+})
+
+reactmohitVirtue.save();
+
