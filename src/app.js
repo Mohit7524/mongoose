@@ -51,15 +51,22 @@ const mohitVirtue=new mongoose.model("mongoose",mohitVirtueeSchema);
 
 // Create Document or Inset the db
 
-const reactmohitVirtue=new mohitVirtue({
-    firstName:'Sahzaad',
-    lastName:'Singh',
-    mobile_no:8366663726,
-    emailId:'sahzad@gmail.com'
-})
-
-reactmohitVirtue.save();
-
+const createDocument = async () => {
+    try {
+        const reactmohitVirtue=new mohitVirtue({
+            firstName:'Saurabh',
+            lastName:'Singh',
+            mobile_no:836683726,
+            emailId:'saurabhh@gmail.com'
+    })
+    const result=await reactmohitVirtue.save();
+    console.log(result);
+}
+ catch(err){
+    console.log(err);
+ }
+}
+createDocument();
 /*
 // Expected Output
 
