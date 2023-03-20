@@ -60,3 +60,14 @@ const reactmohitVirtue=new mohitVirtue({
 
 reactmohitVirtue.save();
 
+/*
+// Expected Output
+
+_id: 641834dfad2c4d9421c19742
+firstName:"Sahzaad"
+lastName:"Singh"
+mobile_no:8366663726
+emailId:"sahzad@gmail.com"
+date:2023-03-20T10:26:39.291+00:00
+__v: 0
+*/
