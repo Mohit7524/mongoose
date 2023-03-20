@@ -54,10 +54,10 @@ const mohitVirtue=new mongoose.model("mongoose",mohitVirtueeSchema);
 const createDocument = async () => {
     try {
         const reactmohitVirtue=new mohitVirtue({
-            firstName:'Saurabh',
-            lastName:'Singh',
+            firstName:'Nidhi',
+            lastName:'Rai',
             mobile_no:836683726,
-            emailId:'saurabhh@gmail.com'
+            emailId:'Nidhi@gmail.com'
     })
     const result=await reactmohitVirtue.save();
     console.log(result);
