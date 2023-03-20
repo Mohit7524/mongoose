@@ -95,8 +95,20 @@ const createDocument = async () => {
     console.log(err);
  }
 }
-createDocument();
 
+*/
+
+
+// createDocument();                Used for create the dacuments in the collections
+
+// but here i am going to perform Read operation show i need to comment this parts.
+
+
+const getDacument=async () => {
+    const result = await mohitVirtue.find();
+    console.log(result);
+}
+getDacument();
 
 
 
