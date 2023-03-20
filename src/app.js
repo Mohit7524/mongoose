@@ -61,6 +61,8 @@ const createDocument = async () => {
             emailId:'Nidhi@gmail.com'
     })
     */
+
+    // Insert two or more dacuments inside the collections
    const createDocument = async () => {
     try{
         const reactmohitVirtue=new mohitVirtue({
@@ -96,7 +98,6 @@ const createDocument = async () => {
  }
 }
 
-*/
 
 
 // createDocument();                Used for create the dacuments in the collections
