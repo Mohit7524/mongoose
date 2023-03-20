@@ -45,6 +45,7 @@ const mohitVirtueeSchema=new mongoose.Schema( {
 
 const mohitVirtue=new mongoose.model("mongoose",mohitVirtueeSchema);
 
+/*
 // mohitVirtue  : Class name
 // mohitVirtueeSchema : Collection Name
 
@@ -59,7 +60,35 @@ const createDocument = async () => {
             mobile_no:836683726,
             emailId:'Nidhi@gmail.com'
     })
-    const result=await reactmohitVirtue.save();
+    */
+   const createDocument = async () => {
+    try{
+        const reactmohitVirtue=new mohitVirtue({
+            firstName:'Nidhi1',
+            lastName:'Rai',
+            mobile_no:836683726,
+            emailId:'Nidhi@gmail.com'
+    })
+    const mongoosemohitVirtue=new mohitVirtue({
+        firstName:'mongoose',
+        lastName:'bhai',
+        mobile_no:836683626,
+        emailId:'mongoose@gmail.com'
+   })
+   const backmohitVirtue=new mohitVirtue({
+    firstName:'back',
+    lastName:'pulpul',
+    mobile_no:836383726,
+    emailId:'back@gmail.com'
+   })
+   const nodemohitVirtue=new mohitVirtue({
+    firstName:'node',
+    lastName:'jadhav',
+    mobile_no:831683726,
+    emailId:'jadhav@gmail.com'
+})
+    
+    const result=await mohitVirtue.insertMany([reactmohitVirtue,mongoosemohitVirtue,backmohitVirtue,nodemohitVirtue]);
     console.log(result);
 }
  catch(err){
@@ -67,6 +96,10 @@ const createDocument = async () => {
  }
 }
 createDocument();
+
+
+
+
 /*
 // Expected Output
 
@@ -78,3 +111,5 @@ emailId:"sahzad@gmail.com"
 date:2023-03-20T10:26:39.291+00:00
 __v: 0
 */
+
+
